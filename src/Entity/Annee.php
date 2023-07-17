@@ -16,8 +16,9 @@ class Annee
     #[ORM\Column(length: 255)]
     private ?string $anneescolaire = null;
 
-    #[ORM\OneToMany(targetEntity: Projet::class, mappedBy: 'annee')] 
+    #[ORM\OneToMany(targetEntity: Projet::class, mappedBy: 'annee')]
     private $projets;
+
 
     public function getId(): ?int
     {

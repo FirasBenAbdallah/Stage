@@ -1,3 +1,11 @@
-#index:
+# index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+# config/routes.yaml
+app:
+    resource: '../src/Controller/'
+    type: annotation
+    prefix: /api
+    defaults:
+        _format: json
+        _locale: en

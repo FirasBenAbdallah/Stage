@@ -16,8 +16,9 @@ class Projet
     #[ORM\Column(length: 255)]
     private ?string $nom = null;
 
-    #[ORM\ManyToOne(targetEntity: Annee::class, inversedBy: 'projets')] 
+    #[ORM\ManyToOne(targetEntity: Annee::class, inversedBy: 'projets')]
     private ?Annee $annee = null;
+
 
     public function getId(): ?int
     {
@@ -47,4 +48,5 @@ class Projet
 
         return $this;
     }
+
 }

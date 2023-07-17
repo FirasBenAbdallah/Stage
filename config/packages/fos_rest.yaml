@@ -1,0 +1,21 @@
+# Read the documentation: https://fosrestbundle.readthedocs.io/en/3.x/
+fos_rest:
+    routing_loader: false
+    body_listener:
+        decoders:
+            json: fos_rest.decoder.json
+#    param_fetcher_listener:  true
+#    allowed_methods_listener:  true
+    view:
+        formats:
+            json: true
+#        view_response_listener:  true
+#    exception:
+#        codes:
+#            App\Exception\MyException: 403
+#        messages:
+#            App\Exception\MyException: Forbidden area.
+#    format_listener:
+#        rules:
+#            - { path: ^/api, prefer_extension: true, fallback_format: json, priorities: [ json, html ] }
+
